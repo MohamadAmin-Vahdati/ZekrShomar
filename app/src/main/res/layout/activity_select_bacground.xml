@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MAVP.ZekrShomarTasbih.SelectBacgroundActivity"
+    android:id="@+id/layout_SelectWallpaperPage"
+    android:layoutDirection="ltr">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/radio_group">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="تصویر زمینه یک"
+            android:textSize="14sp"
+            android:background="@drawable/selectedoption"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/RB_Wall1"
+            android:textColor="@drawable/selectedtext"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="تصویر زمینه دو"
+            android:textSize="14sp"
+            android:background="@drawable/selectedoption"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:id="@+id/RB_Wall2"
+            android:textColor="@drawable/selectedtext"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="تصویر زمینه سه"
+            android:textSize="14sp"
+            android:background="@drawable/selectedoption"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:id="@+id/RB_Wall3"
+            android:textColor="@drawable/selectedtext"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="تصویر زمینه چهار"
+            android:textSize="14sp"
+            android:background="@drawable/selectedoption"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:id="@+id/RB_Wall4"
+            android:textColor="@drawable/selectedtext"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="تصویر زمینه پنج"
+            android:textSize="14sp"
+            android:background="@drawable/selectedoption"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:id="@+id/RB_Wall5"
+            android:textColor="@drawable/selectedtext"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:text="تایید"
+        android:textSize="16sp"
+        android:background="@drawable/bg_for_btn_sefr"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_ConfirmWallpaper"/>
+
+</RelativeLayout>

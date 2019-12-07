@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MAVP.ZekrShomarTasbih.ZekrPagesActivity"
+    android:orientation="vertical"
+    android:id="@+id/layout_ZekrPage"
+    android:fillViewport="true"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_for_addzekr"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="اضافه کردن ذکر جدید"
+            android:textSize="15sp"
+            android:id="@+id/btn_AddZekr"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/recyclerview"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

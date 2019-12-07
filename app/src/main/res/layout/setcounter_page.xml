@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:paddingTop="20dp"
+    android:paddingBottom="25dp"
+    android:paddingRight="40dp"
+    android:paddingLeft="40dp"
+    android:layoutDirection="ltr">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:inputType="number"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:id="@+id/ET_LastCount"
+            android:backgroundTint="#727272"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="شروع ذکر از : "
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/TV_LastCount"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:inputType="number"
+            android:layout_marginRight="13dp"
+            android:gravity="center"
+            android:id="@+id/ET_FullCount"
+            android:backgroundTint="#727272"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تعداد دوره : "
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/TV_FullCount"/>
+
+    </LinearLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بدون محدودیت"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:id="@+id/CB_Ultimate"
+        android:layout_marginTop="7dp"
+        android:buttonTint="#727272"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="13dp"
+        android:layout_gravity="center">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="40"
+            android:textColor="#338633"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:id="@+id/TV_inputSuggested" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مقدار توصیه شده : "
+            android:textSize="13sp"
+            android:textColor="#338633"
+            android:textStyle="bold"
+            android:id="@+id/TV_Suggested"/>
+
+    </LinearLayout>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:text="تایید"
+       android:textColor="#000000"
+       android:background="@drawable/bg_btn_ok"
+       android:textSize="13sp"
+       android:layout_gravity="center"
+       android:layout_marginTop="20dp"
+       android:id="@+id/btn_Confirm"
+       android:textStyle="bold"/>
+
+</LinearLayout>

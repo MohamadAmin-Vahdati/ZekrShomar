@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MAVP.ZekrShomarTasbih.MainActivity"
+    android:id="@+id/layout_MainActivity"
+    android:layoutDirection="ltr">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="ذکر روز"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:id="@+id/btn_ZekrRooz"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="تسبیحات حضرت زهرا (س)"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_Tasbihat"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="ذکر شمار"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_ZekrShomar"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="صلوات شمار"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_SalavatShomar"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="تنظیمات پشت زمینه"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_SelectWallpaperPage"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

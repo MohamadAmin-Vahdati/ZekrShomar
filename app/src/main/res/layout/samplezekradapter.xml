@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:layoutDirection="ltr">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_for_zekr"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/select_zekr">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/ZekrforAdapter"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="11dp"
+            android:layout_below="@id/ZekrforAdapter"
+            android:layout_alignParentRight="true">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#E8FFFFFF"
+                android:id="@+id/tedad_gozarande"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/tedad_gozarande2"
+                android:layout_marginLeft="20dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تعداد دوره : "
+                android:textSize="12sp"
+                android:textColor="#E8FFFFFF"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:id="@+id/tedad_dore2"
+                android:layout_toLeftOf="@id/tedad_gozarande"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#E8FFFFFF"
+                android:id="@+id/tedad_dore"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/tedad_dore2"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تعداد شمارش شده : "
+                android:textSize="12sp"
+                android:textColor="#E8FFFFFF"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:id="@+id/tedad_gozarande2"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="حذف ذکر"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_for_btn_sefr"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/ZekrforAdapter"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:id="@+id/btn_Delete"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

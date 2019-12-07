@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MAVP.ZekrShomarTasbih.CounterPageActivity"
+    android:id="@+id/layout_CounterPage"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_for_zekr"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/layout_zekr"
+        android:layout_centerHorizontal="true">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TV_Zekr"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TV_Translate"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#D2FFFFFF"
+            android:layout_below="@id/TV_Zekr"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/layout_max">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#A6FFFFFF"
+            android:id="@+id/tv_max"
+            android:layout_marginTop="127dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/layout_counter"
+        android:visibility="visible">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:textSize="32sp"
+            android:visibility="visible"
+            android:background="@drawable/bg_for_manual"
+            android:id="@+id/btn_counter"
+            android:layout_marginTop="60dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/layout_circleprogress"
+        android:visibility="visible">
+        <com.MAVP.ZekrShomarTasbih.CircleProgress
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:id="@+id/circleProgress"
+            android:layout_marginTop="60dp"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="شروع دوباره"
+        android:background="@drawable/bg_for_btn_sefr"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_circleprogress"
+        android:layout_marginTop="60dp"
+        android:id="@+id/btn_Sefr"
+        android:textSize="14sp"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/layout_etmamZekr"
+        android:visibility="invisible"
+        android:background="@drawable/bg_for_zekr"
+        android:paddingBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ذکر به پایان رسیده است"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/TV_ZekrFinish"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="5dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بازگشت"
+                android:textSize="14sp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_for_etmamzekr_btn"
+                android:textColor="#FFFFFF"
+                android:id="@+id/btn_return"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شروع دوباره"
+                android:textSize="14sp"
+                android:background="@drawable/bg_for_etmamzekr_btn"
+                android:textColor="#FFFFFF"
+                android:id="@+id/btn_again"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_for_player"
+        android:id="@+id/layout_player"
+        android:paddingLeft="15dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/repeat_icon"
+            android:layout_gravity="center"
+            android:id="@+id/btn_repeat"
+            android:background="@drawable/bg_for_repeat_off"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_play" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@drawable/play_icon"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/btn_play"
+            android:layout_centerInParent="true"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="95dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/audioSeekBar"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_play"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

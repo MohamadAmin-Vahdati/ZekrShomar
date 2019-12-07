@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MAVP.ZekrShomarTasbih.MainActivity"
+    android:id="@+id/layout_ZekrRooz"
+    android:layoutDirection="ltr">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="شنبه"
+        android:background="@drawable/bg_for_zekr"
+        android:gravity="center"
+        android:id="@+id/btn_Shanbe"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="یک شنبه"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:id="@+id/btn_YekShanbe"
+            android:layout_marginTop="7dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="دوشنبه"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:id="@+id/btn_DoShanbe"
+            android:layout_marginTop="7dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="سه شنبه"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:id="@+id/btn_SeShanbe"
+            android:layout_marginTop="7dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="چهار شنبه"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:id="@+id/btn_ChaharShanbe"
+            android:layout_marginTop="7dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="پنج شنبه"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:id="@+id/btn_PanjShanbe"
+            android:layout_marginTop="7dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="جمعه"
+            android:background="@drawable/bg_for_zekr"
+            android:gravity="center"
+            android:id="@+id/btn_Jome"
+            android:layout_marginTop="7dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
